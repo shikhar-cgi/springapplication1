@@ -11,8 +11,15 @@ public class App2 {
     public static void main(String[] agrs) {
         XmlBeanFactory context = new XmlBeanFactory(new ClassPathResource("beans.xml"));
         Movie s1 = context.getBean("movie1", Movie.class);
-        System.out.println(s1.getShahrukh().getName());
-        System.out.println(s1.getShahrukh().getAge());
-        System.out.println(s1.getShahrukh().getGender());
+        Movie s2 = context.getBean("movie1", Movie.class);
+
+        if(s1==s2)
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
     }
 }
