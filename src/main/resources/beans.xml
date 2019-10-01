@@ -21,10 +21,8 @@
         <constructor-arg name="name" value="amir" type="java.lang.String" index="0"></constructor-arg>
         <constructor-arg name="gender" value="male" index="1"></constructor-arg>
     </bean>
-    <bean id="movie1" class="com.stackroute.domain.Movie" scope="prototype">
-        <constructor-arg name="shahrukh" ref="shahrukh"></constructor-arg>
-        <constructor-arg name="amir" ref="amir"></constructor-arg>
-        <constructor-arg name="salman" ref="salman"></constructor-arg>
+    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="constructor">
+
     </bean>
 
 </beans>
