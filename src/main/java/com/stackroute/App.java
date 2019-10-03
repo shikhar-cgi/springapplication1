@@ -13,6 +13,7 @@ public class App
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
         Movie s1=context.getBean("movie1",Movie.class);
+        System.out.println(s1.toString());
         ((AbstractApplicationContext)context).registerShutdownHook();
 
 
