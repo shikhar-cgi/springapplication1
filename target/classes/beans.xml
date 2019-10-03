@@ -22,7 +22,7 @@
         <constructor-arg name="gender" value="male" index="1"></constructor-arg>
     </bean>
     <bean id="movie1" class="com.stackroute.domain.Movie" autowire="constructor">
-           
+
     </bean>
 
 </beans>
